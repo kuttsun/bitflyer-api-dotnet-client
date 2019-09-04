@@ -35,7 +35,7 @@ namespace BitFlyer.Apis
         public ParentOrderState ParentOrderState { get; set; }
 
         [DataMember(Name = "expire_date")]
-        public string ExpireDate { get; set; }
+        public DateTime ExpireDate { get; set; }
 
         [DataMember(Name = "parent_order_date")]
         public DateTime ParentOrderDate { get; set; }

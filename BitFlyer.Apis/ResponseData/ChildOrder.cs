@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 using System.Text;
 using Utf8Json;
 
@@ -34,10 +35,10 @@ namespace BitFlyer.Apis
         public ChildOrderState ChildOrderState { get; set; }
 
         [DataMember(Name = "expire_date")]
-        public string ExpireDate { get; set; }
+        public DateTime ExpireDate { get; set; }
 
         [DataMember(Name = "child_order_date")]
-        public string ChildOrderDate { get; set; }
+        public DateTime ChildOrderDate { get; set; }
 
         [DataMember(Name = "child_order_acceptance_id")]
         public string ChildOrderAcceptanceId { get; set; }
